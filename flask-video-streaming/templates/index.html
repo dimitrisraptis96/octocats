@@ -1,9 +1,23 @@
 <html>
   <head>
     <title>Video Streaming Demonstration</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+    <style>
+      body{
+        font-family: 'Lato', 'Helvetica Neue', "sans-serif";
+        text-align: center;
+      }
+      img {
+        margin: 0 auto;
+      }
+    </style>
   </head>
   <body>
-    <h1>Video Streaming Demonstration</h1>
+    <h3>Team Octocat presents</h3>
+    <h1>Octocat EyeReplacer</h1>
     <img src="{{ url_for('video_feed') }}">
+    <p>Made with mad hacking skills at IEEE AUTH SB's Local Hack Day,
+      <em>Thessaloniki, 2/12/2017</em>
+    </p>
   </body>
 </html>
