@@ -2,8 +2,8 @@ import cv2
 import dlib
 from imutils import face_utils
 
-face_cascade = cv2.CascadeClassifier("./haarcascades/haarcascade_frontalface_alt.xml")
-predictor = dlib.shape_predictor("shape_predictor_68_face_landmarks.dat")
+face_cascade = cv2.CascadeClassifier("./haarcascade_frontalface_alt.xml")
+predictor = dlib.shape_predictor("./shape_predictor_68_face_landmarks.dat")
 (rStart, rEnd) = face_utils.FACIAL_LANDMARKS_IDXS["left_eye"]
 (lStart, lEnd) = face_utils.FACIAL_LANDMARKS_IDXS["right_eye"]
 
